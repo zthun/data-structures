@@ -1,0 +1,39 @@
+{
+  "name": "@zthun/helpful",
+  "description": "Useful low level classes and functions that help with common tasks.",
+  "author": "Anthony Bonta",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zthun/helpful"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "rimraf --glob 'dist' 'reports' 'coverage' '*.tgz' '*.log' 'packages/**/dist' 'packages/**/*.tgz' 'packages/**/*.log'",
+    "test": "vitest --run --coverage",
+    "lint": "lint-janitor",
+    "build": "lerna run build",
+    "make": "yarn clean && yarn lint && yarn test && yarn build",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@types/node": "^20.5.8",
+    "@vitest/coverage-istanbul": "^0.34.3",
+    "@zthun/lint-janitor": "^14.3.1",
+    "@zthun/lint-janitor-config": "^14.3.1",
+    "husky": "^8.0.3",
+    "jsdom": "^22.1.0",
+    "lerna": "^7.2.0",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.34.3"
+  },
+  "packageManager": "yarn@3.3.1"
+}
