@@ -20,20 +20,20 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
-    "@types/node": "^20.5.8",
-    "@vitest/coverage-istanbul": "^0.34.3",
-    "@zthun/lint-janitor": "^14.3.1",
-    "@zthun/lint-janitor-config": "^14.3.1",
+    "@types/node": "^20.8.2",
+    "@vitest/coverage-istanbul": "^0.34.6",
+    "@zthun/lint-janitor": "^14.3.2",
+    "@zthun/lint-janitor-config": "^14.3.2",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
-    "lerna": "^7.2.0",
-    "rimraf": "^5.0.1",
+    "lerna": "^7.3.0",
+    "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
-    "vite-tsconfig-paths": "^4.2.0",
-    "vitest": "^0.34.3"
+    "vite-tsconfig-paths": "^4.2.1",
+    "vitest": "^0.34.6"
   },
   "packageManager": "yarn@3.3.1"
 }

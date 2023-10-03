@@ -247,7 +247,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^17.7.1":
+"@commitlint/cli@npm:^17.7.2":
   version: 17.7.2
   resolution: "@commitlint/cli@npm:17.7.2"
   dependencies:
@@ -1843,7 +1843,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.5.8":
+"@types/node@npm:*, @types/node@npm:^20.8.2":
   version: 20.8.2
   resolution: "@types/node@npm:20.8.2"
   checksum: 3da73e25d821bfcdb7de98589027e08bb4848e55408671c4a83ec0341e124b5313a0b20e1e4b4eff1168ea17a86f622ad73fcb04b761abd77496b9a27cbd5de5
@@ -1993,7 +1993,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-istanbul@npm:^0.34.3":
+"@vitest/coverage-istanbul@npm:^0.34.6":
   version: 0.34.6
   resolution: "@vitest/coverage-istanbul@npm:0.34.6"
   dependencies:
@@ -2121,20 +2121,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zthun/helpful@workspace:."
   dependencies:
-    "@commitlint/cli": ^17.7.1
+    "@commitlint/cli": ^17.7.2
     "@commitlint/config-conventional": ^17.7.0
-    "@types/node": ^20.5.8
-    "@vitest/coverage-istanbul": ^0.34.3
-    "@zthun/lint-janitor": ^14.3.1
-    "@zthun/lint-janitor-config": ^14.3.1
+    "@types/node": ^20.8.2
+    "@vitest/coverage-istanbul": ^0.34.6
+    "@zthun/lint-janitor": ^14.3.2
+    "@zthun/lint-janitor-config": ^14.3.2
     husky: ^8.0.3
     jsdom: ^22.1.0
-    lerna: ^7.2.0
-    rimraf: ^5.0.1
+    lerna: ^7.3.0
+    rimraf: ^5.0.5
     ts-node: ^10.9.1
     typescript: ^5.2.2
-    vite-tsconfig-paths: ^4.2.0
-    vitest: ^0.34.3
+    vite-tsconfig-paths: ^4.2.1
+    vitest: ^0.34.6
   languageName: unknown
   linkType: soft
 
@@ -2147,7 +2147,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zthun/lint-janitor-config@npm:^14.3.1":
+"@zthun/lint-janitor-config@npm:^14.3.2":
   version: 14.3.2
   resolution: "@zthun/lint-janitor-config@npm:14.3.2"
   dependencies:
@@ -2168,7 +2168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zthun/lint-janitor@npm:^14.3.1":
+"@zthun/lint-janitor@npm:^14.3.2":
   version: 14.3.2
   resolution: "@zthun/lint-janitor@npm:14.3.2"
   dependencies:
@@ -6090,7 +6090,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lerna@npm:^7.2.0":
+"lerna@npm:^7.3.0":
   version: 7.3.0
   resolution: "lerna@npm:7.3.0"
   dependencies:
@@ -8375,7 +8375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:^5.0.1":
+"rimraf@npm:^5.0.5":
   version: 5.0.5
   resolution: "rimraf@npm:5.0.5"
   dependencies:
@@ -9740,7 +9740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-tsconfig-paths@npm:^4.2.0":
+"vite-tsconfig-paths@npm:^4.2.1":
   version: 4.2.1
   resolution: "vite-tsconfig-paths@npm:4.2.1"
   dependencies:
@@ -9796,7 +9796,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^0.34.3":
+"vitest@npm:^0.34.6":
   version: 0.34.6
   resolution: "vitest@npm:0.34.6"
   dependencies:
