@@ -1,0 +1,29 @@
+{
+  "name": "@zthun/linked-list",
+  "version": "1.0.0",
+  "description": "Package that implements both singly linked list and doubly linked list.",
+  "author": "Anthony Bonta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zthun/data-structures",
+    "directory": "packages/linked-list"
+  },
+  "main": "./dist/lib/index.js",
+  "module": "./dist/lib/index.esm.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "microbundle --format esm,cjs --tsconfig tsconfig.prod.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "vitest": "^0.34.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false
+}
