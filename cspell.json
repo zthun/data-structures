@@ -1,0 +1,35 @@
+{
+  "version": "0.2",
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
+  "language": "en",
+  "words": [
+    "Agender",
+    "bccs",
+    "birthdate",
+    "Bonta",
+    "BUILDKIT",
+    "codepen",
+    "commitlint",
+    "conventionalcommits",
+    "DOCKERHUB",
+    "funcii",
+    "futil",
+    "gteq",
+    "kickstarter",
+    "lteq",
+    "microbundle",
+    "npmrc",
+    "Prosus",
+    "psylocke",
+    "squarespace",
+    "tiktok",
+    "zthun",
+    "zthunworks"
+  ],
+  "dictionaries": [
+    "typescript",
+    "node",
+    "npm",
+    "en_US"
+  ]
+}
