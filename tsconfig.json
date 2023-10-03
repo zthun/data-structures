@@ -2,7 +2,6 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": "packages",
-    "target": "esnext",
     "paths": {
       "@zthun/linked-list": ["linked-list/src/index"],
       "@zthun/tree": ["tree/src/index"]
