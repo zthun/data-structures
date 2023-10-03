@@ -2091,6 +2091,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zthun/data-structures@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@zthun/data-structures@workspace:."
+  dependencies:
+    "@commitlint/cli": ^17.7.2
+    "@commitlint/config-conventional": ^17.7.0
+    "@types/node": ^20.8.2
+    "@vitest/coverage-istanbul": ^0.34.6
+    "@zthun/lint-janitor": ^14.3.2
+    "@zthun/lint-janitor-config": ^14.3.2
+    husky: ^8.0.3
+    jsdom: ^22.1.0
+    lerna: ^7.3.0
+    rimraf: ^5.0.5
+    ts-node: ^10.9.1
+    typescript: ^5.2.2
+    vite-tsconfig-paths: ^4.2.1
+    vitest: ^0.34.6
+  languageName: unknown
+  linkType: soft
+
 "@zthun/eslint-config@npm:^14.3.2":
   version: 14.3.2
   resolution: "@zthun/eslint-config@npm:14.3.2"
@@ -2116,27 +2137,6 @@ __metadata:
   checksum: fdaa79446173634a2c9edb349be69975f63542992e7b70eef1acbd62b1c5d6647fed30782cbbf65c2928619c782e3790d0e2e698062d85da7aa423e3b22d84e3
   languageName: node
   linkType: hard
-
-"@zthun/helpful@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@zthun/helpful@workspace:."
-  dependencies:
-    "@commitlint/cli": ^17.7.2
-    "@commitlint/config-conventional": ^17.7.0
-    "@types/node": ^20.8.2
-    "@vitest/coverage-istanbul": ^0.34.6
-    "@zthun/lint-janitor": ^14.3.2
-    "@zthun/lint-janitor-config": ^14.3.2
-    husky: ^8.0.3
-    jsdom: ^22.1.0
-    lerna: ^7.3.0
-    rimraf: ^5.0.5
-    ts-node: ^10.9.1
-    typescript: ^5.2.2
-    vite-tsconfig-paths: ^4.2.1
-    vitest: ^0.34.6
-  languageName: unknown
-  linkType: soft
 
 "@zthun/htmlhint-config@npm:^14.1.0":
   version: 14.1.0

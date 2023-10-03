@@ -1,12 +1,12 @@
 {
-  "name": "@zthun/helpful",
+  "name": "@zthun/data-structures",
   "description": "Useful low level classes and functions that help with common tasks.",
   "author": "Anthony Bonta",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/zthun/helpful"
+    "url": "https://github.com/zthun/data-structures"
   },
   "workspaces": [
     "packages/*"
