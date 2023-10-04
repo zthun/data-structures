@@ -1,3 +1,20 @@
+# Outputs
+coverage
+reports
+*.lerna_backup
+*.tgz
+.rpt2_cache
+
+# Yarn
+.yarn/cache
+install-state.gz
+
+# Secrets
+.secrets
+
+# OS Turds
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -41,6 +58,9 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
