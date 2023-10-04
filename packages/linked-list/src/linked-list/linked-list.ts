@@ -181,6 +181,72 @@ export class ZLinkedList<TData> implements Iterable<TData> {
   }
 
   /**
+   * Searches through the linked list starting at the point of an iterator
+   * for an item that matches a predicate.
+   *
+   * @param match -
+   *        Either a data value that is a candidate to search for in the list
+   *        or a callback function where the first argument is the data to check
+   *        and the return value is true if the argument is to match.
+   * @param start -
+   *        The current iterator to start at.  Note that this iterator will be mutated
+   *        and returned once it finds the element, or it will be completed and null
+   *        will be returned.
+   *
+   * @returns
+   *        An iterator that points to the item that matches the predicate, or null
+   *        if no such item exists.
+   */
+  public find(
+    start: IZLinkedListIterator<TData>,
+    match: ((x: TData) => boolean) | TData
+  ): IZLinkedListIterator<TData> | null {
+    const _predicate = typeof match === 'function' ? (match as (x: TData) => boolean) : (x: TData) => x === match;
+
+    for (let { done, value } = start.next(); !done; { done, value } = start.next()) {
+      if (_predicate(value)) {
+        return start;
+      }
+    }
+
+    return null;
+  }
+
+  /**
+   * Searches through the linked list for the first item from the front
+   * that matches a predicate.
+   *
+   * @param predicate -
+   *        Either a data value that is a candidate to search for in the list
+   *        or a callback function where the first argument is the data to check
+   *        and the return value is true if the argument is to match.
+   *
+   * @returns
+   *        An iterator that points to the item that matches the predicate, or null
+   *        if no such item exists.
+   */
+  public findFirst(predicate: ((x: TData) => boolean) | TData): IZLinkedListIterator<TData> | null {
+    return this.find(this.forward(), predicate);
+  }
+
+  /**
+   * Searches through the linked list for the first item from the front
+   * that matches a predicate.
+   *
+   * @param predicate -
+   *        Either a data value that is a candidate to search for in the list
+   *        or a callback function where the first argument is the data to check
+   *        and the return value is true if the argument is to match.
+   *
+   * @returns
+   *        An iterator that points to the item that matches the predicate, or null
+   *        if no such item exists.
+   */
+  public findLast(predicate: TData | ((x: TData) => boolean)): IZLinkedListIterator<TData> | null {
+    return this.find(this.backward(), predicate);
+  }
+
+  /**
    * Creates and returns an iterator that iterates
    * from front to back.
    *

@@ -201,6 +201,72 @@ describe('ZLinkedList', () => {
     });
   });
 
+  describe('Find', () => {
+    const createPopulatedTarget = () => {
+      const target = createTestTarget();
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 4, 5].forEach((v) => target.addBack(v));
+      return target;
+    };
+
+    describe('First', () => {
+      it('should return an iterator with the first value that matches a value', () => {
+        // Arrange.
+        const target = createPopulatedTarget();
+        // Act.
+        const actual = target.findFirst(7);
+        // Assert.
+        expect(actual?.value()).toEqual(7);
+      });
+
+      it('should return an iterator with the first value that matches a predicate', () => {
+        // Arrange.
+        const target = createPopulatedTarget();
+        // Act.
+        const actual = target.findFirst((x) => x > 2 && x % 2 === 1);
+        // Assert.
+        expect(actual?.value()).toEqual(3);
+      });
+
+      it('should return a null iterator if no such value can be found', () => {
+        // Arrange.
+        const target = createPopulatedTarget();
+        // Act.
+        const actual = target.findFirst(11);
+        // Assert.
+        expect(actual).toBeNull();
+      });
+    });
+
+    describe('Last', () => {
+      it('should return an iterator with the first value that matches a value', () => {
+        // Arrange.
+        const target = createPopulatedTarget();
+        // Act.
+        const actual = target.findLast(7);
+        // Assert.
+        expect(actual?.value()).toEqual(7);
+      });
+
+      it('should return an iterator with the first value that matches a predicate', () => {
+        // Arrange.
+        const target = createPopulatedTarget();
+        // Act.
+        const actual = target.findLast((x) => x < 10 && x % 2 === 0);
+        // Assert.
+        expect(actual?.value()).toEqual(4);
+      });
+
+      it('should return a null iterator if no such value can be found', () => {
+        // Arrange.
+        const target = createPopulatedTarget();
+        // Act.
+        const actual = target.findLast(11);
+        // Assert.
+        expect(actual).toBeNull();
+      });
+    });
+  });
+
   describe('Iterable', () => {
     describe('Forward', () => {
       it('should iterate all items from front to back', () => {
